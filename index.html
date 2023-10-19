@@ -6,6 +6,7 @@
     <title>PIT Deodoro Roca</title>
     <link rel="icon" type="image/x-icon" href="imagenes/PIT.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -41,12 +42,32 @@
 <div class="imagen2">
     <img src="imagenes/estudiante.jpg" alt="imagen de estudiantes">
 </div>
+
+
 <div class="inscripciones" id="inscripciones">
     <h2>INSCRIPCIONES</h2>
     <p>2024</p>
-    <button>INGRESAR</button>
+
+    <button id="mostrarTarjeta">INGRESAR</button>
+    <div id="tarjeta" class="oculto">
+        <h1>Requisitos</h1>
+        <ul>
+            <li><span class="material-symbols-outlined">
+                check_small
+                </span>Tener entre 14 y 17 años</li>
+            <li><span class="material-symbols-outlined">
+                check_small
+                </span>No haber cursado ni estar matriculado/a en una escuela en el 2023</li>
+            <li><span class="material-symbols-outlined">
+                check_small
+                </span>Tener estudios primarios completos</li>
+        </ul>
+        <button class="matricula"><a href="https://formularioinscripcion.cba.gov.ar/fup/home" target="_blank" class="enlaceMatri">MATRICULARME</a></button>
+    </div>
 </div>
-</div>
+
+
+
 
     <script src="main.js"> </script>
 </body>
