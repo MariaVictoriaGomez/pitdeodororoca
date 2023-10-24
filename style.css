@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&family=Magra&display=swap');
-
+ html{
+    scroll-behavior: smooth;
+} 
 * {
     margin: 0;
     padding: 0;
@@ -67,17 +69,89 @@ nav img {
 .enlaces:hover{
     color:#8C79EF;
 }
-.imagen{
+
+.img {
     width: 100%;
-    height: 500px;
-    
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-image: url('imagenes/patio.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.imagen img{
-    width: 100%;
+  
+.overlay {
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffde59e2;
+    color: #8C79EF;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s, opacity 0.5s; /* Agrega una transición para la opacidad */
     height: 100%;
-    object-fit: cover;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: flash 2s 1; /* Aplica la animación flash */
+  }
+  
+
+  
+.overlay::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #8C79EF;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: underline 2s;
+  }
+  .img:hover .overlay {
+    transform: translateY(0);
+    animation: none; /* Detiene la animación al hacer hover */
+  }
+
+
+
+  .overlay-text {
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+  
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes underline {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
 
 .objetivo{
     display: flex;
@@ -100,8 +174,12 @@ nav img {
 }
 .nivel h1:hover{
     transform: translateY(-5px);
-    
-    
+       
+}
+
+.nivel h1::selection{
+    background-color:#FFC2EB;
+    color:#ea4c89;
 }
 .parrafo{
     width: 400px;
