@@ -336,5 +336,49 @@ align-items: center;
 }
 
 
+.nosotros{
+    display: flex;
+    font-family: 'Figtree', sans-serif;
+        padding: 126px;
+    align-items: center;
+    background-color: #8C79EF;
+    color: beige;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.texnosotros {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap:31px;
+    
+}
+.tex2{
+    font-size: 20px;
+}
+.nosotros h1{
+    font-style: 45px;
+
+}
+.nosotros p 
+{   text-align: justify;
+   
+    margin-top: 23px;
+    margin-bottom: 34px;
+    font-size: 20px;
+}
 
 
+.buttonsNosotros{
+display: flex;
+
+}
+
+.curricula a {
+    text-decoration: none;
+color:#2e2a2c;
+}
