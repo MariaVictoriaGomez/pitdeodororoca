@@ -297,6 +297,7 @@ align-items: center;
     font-family: 'Figtree', sans-serif ;
     padding: 20px;
   margin-left: 20px;
+  color: white;
  
 }
 
@@ -382,3 +383,37 @@ display: flex;
     text-decoration: none;
 color:#2e2a2c;
 }
+
+.footer{
+    /* display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap:31px; */
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+
+.redes{
+    display: flex;
+    
+  }
+  .redes a{
+    margin-right: 5px;
+    margin-left: 10px ;
+  }
+.redes img{
+    width: 20px;
+    height: 20px;
+    filter:brightness(0.5);
+  }
+  
+  .redes img:hover{
+    filter:brightness(1);
+  }
