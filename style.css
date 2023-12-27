@@ -393,27 +393,34 @@ color:#2e2a2c;
     flex-direction: row;
     gap:31px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2rem;
     font-family: 'Figtree', sans-serif;
+    background-color:#FFDE59;
+    color:#2e2a2c;
 }
-
 
 
 .redes{
     display: flex;
+    align-items: center;
+    font-family: 'Figtree', sans-serif;
+    margin-top: 8px;
+    
     
   }
   .redes a{
-    margin-right: 5px;
-    margin-left: 10px ;
+    margin-right: 10px;
   }
 .redes img{
     width: 20px;
     height: 20px;
-    filter:brightness(0.5);
+    filter: brightness(0.5);
   }
+  
   
   .redes img:hover{
     filter:brightness(1);
   }
+
+  
