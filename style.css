@@ -479,7 +479,37 @@ color:#2e2a2c;
 
 @media (max-width:480px) {
 
+    .nivel p{
+        font-size: 10px;
+    }
+.nivel h1{
+    font-size: 20px;
+}
+
+.parrafo{
+    font-size: 14px;
+}
+  #ocultar  {
+        display: none;
+
+    }
     .imagen2 img {
         display: none;
     }
+button {
+    padding: 10px;
+}
+
+.inscripciones h2 {
+    font-size: 30px;
+}
+
+.inscripciones p {
+    font-size: 30px;
+}
+
+#mostrarTarjeta {
+    padding: 10px;
+    font-size: 15px;
+}
 }
