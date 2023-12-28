@@ -26,13 +26,15 @@ header{
 .bar {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: baseline;
      padding: 10px 25px; 
      position: fixed;
      z-index: 1000;
      background-color: white;
      top: 0;
+     flex-wrap: wrap;
+     flex-direction: row;
     
 }
 
@@ -40,8 +42,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    gap:410px;
+   
 
 }
 
@@ -433,12 +436,12 @@ color:#2e2a2c;
 .contenedorfooter{
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 623px;
+    
     padding: 37px;
 }
 .redes{
