@@ -512,4 +512,21 @@ button {
     padding: 10px;
     font-size: 15px;
 }
+
+.nosotros {
+    padding: 25px;
+}
+.nosotros h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.nosotros p{
+    font-size: 15px;
+    text-align: left;
+}
+
+.tex2 {
+    font-size: 15px;
+}
 }
