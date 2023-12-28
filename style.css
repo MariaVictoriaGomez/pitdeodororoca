@@ -479,6 +479,14 @@ color:#2e2a2c;
 
 @media (max-width:480px) {
 
+    .nav ul li {
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .overlay-text {
+        font-size: 30px;
+    }
     .nivel p{
         font-size: 10px;
     }
