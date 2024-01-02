@@ -52,3 +52,12 @@ window.addEventListener("scroll", function() {
       logo.classList.remove("fixed");
     }
   });
+
+
+  const imageContainers = document.querySelectorAll('.image-container');
+
+imageContainers.forEach(container => {
+  container.addEventListener('click', () => {
+    container.classList.toggle('active');
+  });
+});

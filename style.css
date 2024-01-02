@@ -31,6 +31,10 @@ header {
     float: left;
     margin-right: 10px;
     margin-left: 20px;
+position: relative;
+z-index: 9999; /* Ajusta el valor de z-index según tus necesidades */
+      
+   
 }
 
 .logo img {
@@ -39,6 +43,7 @@ header {
     margin-right: 10px;
     display: flex;
     filter: brightness(1);
+   
 }
 
 #menuToggle{
@@ -51,7 +56,13 @@ header {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    list-style-type: none;
+    list-style-type: none;    
+    position: relative;
+    z-index: 9; /* Ajusta el valor de z-index según tus necesidades */
+      
+    
+       
+      
     
 
 }
@@ -193,14 +204,14 @@ nav img:hover{
     color:#8C79EF;
     font-weight: 600;
 } */
-/* 
+
 .enlaces{
     text-decoration: none;
     color:#2B2B2B;
 }
 .enlaces:hover{
-    color:#8C79EF;
-} */
+    color:#201f1f;
+} 
 
 .img {
     width: 100%;
@@ -559,6 +570,35 @@ display: flex;
     text-decoration: none;
 color:#2e2a2c;
 }
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px;
+  }
+  
+  .image-container {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+
+
 
 .footer{
 
