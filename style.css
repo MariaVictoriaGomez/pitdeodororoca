@@ -6,7 +6,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+ }
+
+ /*
 header{
     display: flex;
     justify-content: space-between;
@@ -17,12 +19,112 @@ header{
    
 
 
+} */
+
+header {
+ height: 50px;
 }
 
 .logo {
+    display: flex;
     float: left;
     margin-right: 10px;
+    margin-left: 20px;
 }
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+    filter: brightness(1);
+}
+
+#menuToggle{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    color: rgb(140,121,239);
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    list-style-type: none;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+ul#menu{
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    z-index: 2; /* Asegura que el menú esté por encima de la imagen */
+}
+
+ul#menu li{
+    margin: 5px 0;
+    opacity: 0;
+    transition: 0.5s all cubic-bezier(0.31,-0.105,0.43,1.4);
+    font-family: 'Figtree', sans-serif;
+}
+
+
+ul#menu li:nth-child(even){
+   transform: translateX(50px);
+}
+
+ul#menu li:nth-child(odd){
+    transform: translateX(-50px);
+ }
+
+ 
+ul#menu li:nth-child(1){
+    transition-delay: 0.1s;
+ }
+
+  
+ul#menu li:nth-child(2){
+    transition-delay: 0.2s;
+ }
+ 
+ 
+ ul#menu li:nth-child(3){
+    transition-delay: 0.3s;
+ }
+ 
+ ul#menu li:nth-child(4){
+    transition-delay: 0.4s;
+ }
+
+
+
+ul#menu.active li{
+    opacity: 1;
+    transform: translateX(0px);
+}
+ 
+ul#menu li a{
+    background-color: #ea4c89;
+    display: block;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 3px;
+    width: 160px;
+
+}
+
+/* }
 .bar {
     width: 100%;
     display: flex;
@@ -74,15 +176,15 @@ nav img:hover{
 .nav li:hover{
     color:#8C79EF;
     font-weight: 600;
-}
-
+} */
+/* 
 .enlaces{
     text-decoration: none;
     color:#2B2B2B;
 }
 .enlaces:hover{
     color:#8C79EF;
-}
+} */
 
 .img {
     width: 100%;
@@ -143,6 +245,22 @@ nav img:hover{
     font-size: 60px;
 
   }
+
+  .typing-cursor {
+    /* Estilos para el cursor de escritura */
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 24px;
+    background-color: #fff;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
   @keyframes flash {
     0% {

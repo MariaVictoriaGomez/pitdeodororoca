@@ -11,12 +11,28 @@
 </head>
 <body>
     <header id="inicio">
-    <div class="bar" >
+        <section>
+            <div class="logo">
+                <img src="imagenes/PIT.png" alt="logo">
+            </div>
+    
+            <ul id="menuToggle" onmouseover="toggleMenu()"> <!-- Cambio el id a menuToggle -->
+                <li id="menuTrigger"><span class="material-symbols-outlined">
+                    menu
+                    </span></li> <!-- Cambio el botón por un elemento li -->
+                <ul id="menu">
+                    <li><a href="#nosotros" class="enlaces">NOSOTROS</a></li>
+                    <li><a href="">INSTITUCIONAL</a></li>
+                    <li><a href="#inscripciones" class="enlaces">INSCRIPCIONES</a></li>
+                    <li><a href="#contacto" class="enlaces">CONTACTO</a></li>
+                </ul>
+            </ul>
+        </section>
+        
+    <!-- <div class="bar" >
     <nav class="nav">
         <div class="nav-content">
-            <div class="logo">
-        <img src="imagenes/PIT.png" alt="logo">
-    </div>
+           
         <ul>
             <li><a href="#nosotros" class="enlaces">NOSOTROS</a></li>
             <li>INSTITUCIONAL</li>
@@ -25,12 +41,12 @@
         </ul>
     </div>
     </nav>
-</div>
+</div> -->
 </header>
 
 <div class="img">
     <div class="overlay">
-        <div class="overlay-text">PIT DEODORO ROCA</div></div>
+        <div class="overlay-text" id="typing-effect">PIT DEODORO ROCA</div></div>
 </div>
     
 
