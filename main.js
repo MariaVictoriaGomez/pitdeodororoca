@@ -39,3 +39,16 @@ const typingEffect = () => {
 };
 
 typingEffect();
+
+window.addEventListener("scroll", function() {
+    const menuToggle = document.getElementById("menuToggle");
+    const logo = document.querySelector(".logo");
+  
+    if (window.pageYOffset > 0) {
+      menuToggle.classList.add("fixed");
+      logo.classList.add("fixed");
+    } else {
+      menuToggle.classList.remove("fixed");
+      logo.classList.remove("fixed");
+    }
+  });
